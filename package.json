@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm --prefix backend start",
+    "dev:frontend": "npm --prefix frontend start",
+    "dev:backend": "npm --prefix backend start",
+    "build": "npm --prefix frontend run build",
+    "test": "npm --prefix frontend test -- --watchAll=false",
+    "vercel-build": "npm --prefix frontend run build"
   },
   "keywords": [],
   "author": "",
